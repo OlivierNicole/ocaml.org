@@ -334,7 +334,7 @@ Admittedly, using a `Mutex` to ensure exclusive access may be a bit
 heavy if performance is a concern. If this is the case, one option is
 to replace the underlying `array` with a lock-free data structure,
 such as the [`Hashtbl`
-from`Kcas_data`](https://ocaml-multicore.github.io/kcas/doc/kcas_data/Kcas_data/Hashtbl/index.html).
+from `Kcas_data`](https://ocaml-multicore.github.io/kcas/doc/kcas_data/Kcas_data/Hashtbl/index.html).
 
 As a final word of warning, `Domain`s are so fast that in a too
 simple test runner, one `Domain` may complete before the second has
